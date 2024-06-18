@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_104_Elijah-Vakulenko/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS team project 12</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    
+    <script type="module" crossorigin src="/js_104_Elijah-Vakulenko/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_104_Elijah-Vakulenko/assets/vendor-b0f3b1d6.js">
+    <link rel="stylesheet" href="/js_104_Elijah-Vakulenko/assets/vendor-493db78f.css">
+    <link rel="stylesheet" href="/js_104_Elijah-Vakulenko/assets/index-344b4a42.css">
+  </head>
+  <body>
+    <header class="header js-header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="logo-header" href="./index.html"
+        >Lloyd<span>Jefferson.</span></a
+      >
+      <ul class="nav-menu">
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="switch" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li><a class="nav-link" href="#about">About me</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="open-menu-btn">
+      <svg class="burg-icon" width="22" height="16">
+        <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#header-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mob-menu">
+    <div class="logo-close-btn">
+      <a class="logo-header" href="./index.html"
+        >Lloyd<span>Jefferson.</span></a
+      >
+      <button type="button" class="close-menu-btn">
+        <svg class="close-menu-icon" width="16" height="16">
+          <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#header-cross"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="mob-menu-nav">
+      <ul class="mob-nav-list">
+        <li><a class="nav-link" href="#about">About me</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contacts">Contacts</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="mob-switch" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="hero-section">
+  <div class="container">
+    <div class="desc-img">
+      <h1>Hello, I am <span>Fullstack developer</span></h1>
+      <picture>
+        <source srcset="/js_104_Elijah-Vakulenko/assets/hero-1x-min-081da553.png 1x, /js_104_Elijah-Vakulenko/assets/hero-2x-min-5e386273.png 2x" />
+        <img class="image-hero" src="/js_104_Elijah-Vakulenko/assets/hero-1x-min-081da553.png" alt="Hero photo" />
+      </picture>
+    </div>
+    <div class="btn-p">
+      <button class="order-btn" type="button" id="orderButton">
+        <svg class="fill-icon" width="28" height="24">
+          <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow"></use>
+        </svg>
+        Order the project
+      </button>
+      <p class="description">
+        I work with people all over the world to create
+        <span>impressive</span> and <span>functional websites</span> that
+        reflect each client's unique personality.
+      </p>
+    </div>
+  </div>
+
+  <ul class="social-list">
+    <li>
+      <a href="https://www.instagram.com/goitclub" target="_blank">Instagram</a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/goit" target="_blank">Facebook</a>
+    </li>
+    <li>
+      <a
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        target="_blank"
+        >LinkedIn</a
+      >
+    </li>
+    <li>
+      <a href="https://github.com/Elijah-Vakulenko/avocado-team" target="_blank"
+        >GitHub</a
+      >
+    </li>
+  </ul>
+</section>
+
+      <section class="section-about" id="about">
+  <div class="container">
+    <h2>About <span>me</span></h2>
+    <div class="profile-container">
+      <img
+        srcset="/js_104_Elijah-Vakulenko/assets/about-me-img-8497dedc.png , /js_104_Elijah-Vakulenko/assets/about-me-img-x2-f8d78d51.png "
+        src="/js_104_Elijah-Vakulenko/assets/about-me-img-8497dedc.png"
+        class="about-img"
+        alt="profile-photo"
+      />
+      <div class="profile-container-text">
+        <h3>BIO</h3>
+        <p class="profile-container-paragraph">
+          I'm Lloyd Jefferson, a talented programmer specializing in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+        <p class="profile-container-paragraph">
+          Adaptable to both independent and team-oriented work, I collaborate
+          seamlessly with colleagues, exchanging ideas and finding optimal
+          solutions. My professional maturity enables me to navigate challenges
+          and stressful situations with a calm demeanor, maintaining a
+          consistently high quality of work. Committed to self-improvement, I
+          actively engage in studying new technologies and practices to stay
+          current with the latest innovations in the field.
+        </p>
+      </div>
+    </div>
+    <div class="education-role-container">
+      <div class="education">
+        <h3>EDUCATION</h3>
+        <ul class="educalion-list">
+          <li class="education-list-item">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li class="education-list-item">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li class="education-list-item">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>ROLE</h3>
+        <ul class="role-list">
+          <li class="role-list-item">Frontend development</li>
+          <li class="role-list-item">HeadlessCMS, Wordpress</li>
+          <li class="role-list-item">Blender (enjoy)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="tech-skills">
+  <h2 class="is-hidden">Tech Skills</h2>
+  <div class="tech-skills-cover">
+    <ul class="tech-skills-list">
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>HTML/CSS</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>JavaScript</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>React</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>Node. js</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>React Native</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>Typescript</h3>
+      </li>
+      <li class="tech-skills-item"></li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>HTML/CSS</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>JavaScript</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>React</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>Node. js</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>React Native</h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3>Typescript</h3>
+      </li>
+    </ul>
+  </div>
+  <div class="tech-skills-cover cover-rotate">
+    <ul class="tech-skills-list list-rotate">
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>HTML/CSS</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>JavaScript</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>React</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>Node. js</span></h3>
+      </li>
+<li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>React Native</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>Typescript</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>HTML/CSS</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>JavaScript</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>React</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>Node. js</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>React Native</span></h3>
+      </li>
+      <li class="tech-skills-item">
+        <div class="tech-skills-item-block block-span">
+          <p class="is-hidden">dot</p>
+        </div>
+      </li>
+      <li class="tech-skills-item">
+        <h3><span>Typescript</span></h3>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="projects" id="projects">
+  <div class="container">
+    <h2 class="projects-title">my <span>projects</span></h2>
+    <ul class="project-list js-project-list"></ul>
+
+    <button type="button" class="load-more-btn" data-action="load-more">
+      <span class="label">load more</span>
+    </button>
+  </div>
+</section>
+
+      <section class="benefits">
+  <div class="container">
+    <h2 class="ben-title"><span>Benefits</span> of working with me</h2>
+    <ul class="ben-list">
+      <li class="ben-item expertise">
+        <div class="ben-box-icon">
+          <svg class="ben-icon" width="24" height="24">
+            <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-user-01"></use>
+          </svg>
+        </div>
+        <h3 class="is-hidden">Qualities</h3>
+        <h4>Expertise</h4>
+        <p>
+          With extensive experience in development, I have a deep understanding
+          of programming and website development.
+        </p>
+      </li>
+
+      <li class="ben-item communication">
+        <div class="ben-box-icon">
+          <svg class="ben-icon" width="24" height="24">
+            <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-message-02"></use>
+          </svg>
+        </div>
+        <h4>Communication</h4>
+        <p>
+          Understanding your needs and wants is my priority and I am always
+          available for discussions and open to corrections.
+        </p>
+      </li>
+
+      <li class="ben-item art">
+        <div class="ben-box-icon">
+          <svg class="ben-icon" width="24" height="24">
+            <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-brush"></use>
+          </svg>
+        </div>
+        <h4>Art</h4>
+        <p>
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </li>
+
+      <li class="ben-item execution">
+        <div class="ben-box-icon">
+          <svg class="ben-icon" width="24" height="24">
+            <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-hourglass-04"></use>
+          </svg>
+        </div>
+        <h4>Urgent execution</h4>
+        <p>
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="faq">
+  <div class="container faq-general-block">
+    <div class="faq-first-block faq-decor">
+      <h2 class="faq-title">frequently asked <span>question</span></h2>
+    </div>
+    <div class="faq-second-block">
+      <h3 class="is-hidden">Accordeon</h3>
+      <ul class="faq-list">
+        <li class="faq-list-item faq-i">
+          <div class="faq-title-arrow">
+            <h4 class="faq-item-title">
+              What programming languages are most often used in your project?
+            </h4>
+            <svg class="faq-icon-up" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-up"></use>
+            </svg>
+            <svg class="faq-icon-down" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <p class="faq-item-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </li>
+        <li class="faq-list-item faq-i">
+          <div class="faq-title-arrow">
+            <h4 class="faq-item-title">
+              What are the deadlines for the project?
+            </h4>
+            <svg class="faq-icon-up" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-up"></use>
+            </svg>
+            <svg class="faq-icon-down" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <p class="faq-item-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </li>
+        <li class="faq-list-item faq-i">
+          <div class="faq-title-arrow">
+            <h4 class="faq-item-title">What payment methods do you accept?</h4>
+            <svg class="faq-icon-up" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-up"></use>
+            </svg>
+            <svg class="faq-icon-down" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <p class="faq-item-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </li>
+        <li class="faq-list-item faq-i">
+          <div class="faq-title-arrow">
+            <h4 class="faq-item-title">How can I contact you?</h4>
+            <svg class="faq-icon-up" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-up"></use>
+            </svg>
+            <svg class="faq-icon-down" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <p class="faq-item-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </li>
+        <li class="faq-list-item faq-i">
+          <div class="faq-title-arrow">
+            <h4 class="faq-item-title">Do you provide advice or support?</h4>
+            <svg class="faq-icon-up" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-up"></use>
+            </svg>
+            <svg class="faq-icon-down" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <p class="faq-item-text">
+The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </li>
+        <li class="faq-list-item faq-i">
+          <div class="faq-title-arrow">
+            <h4 class="faq-item-title">
+              What does the process of developing a software product look like
+              from idea to implementation?
+            </h4>
+            <svg class="faq-icon-up" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-up"></use>
+            </svg>
+            <svg class="faq-icon-down" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <p class="faq-item-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section>
+  <div class="container">
+    <h2 class="review-title">Reviews</h2>
+    <div class="swiper">
+      <ul class="swiper-wrapper" id="reviews"></ul>
+      <div class="swiper-navigation">
+        <button class="swiper-button-prev">
+          <svg width="24" height="24">
+            <use href="/js_104_Elijah-Vakulenko/assets/symbol-defs-f6a43fc8.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+        <button class="swiper-button-next">
+          <svg width="24" height="24">
+            <use href="/js_104_Elijah-Vakulenko/assets/symbol-defs-f6a43fc8.svg#icon-arrow-narrow-left"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="reviews-error-message" style="display: none">Not found</div>
+    </div>
+  </div>
+</section>
+
+      <section class="wt-section" id="contacts">
+  <div class="container">
+    <h2 class="work-together-title">Let’s <span>work together</span></h2>
+    <div class="wt-content">
+      <h4 class="work-together-subtitle">
+        Contact me to transform your ideas into exceptional solutions.
+      </h4>
+      <address>
+        <ul class="contacts">
+          <li class="contact-item">
+            <svg class="contacts-icons" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#phone"></use>
+              </svg>
+              <a
+              href="tel:+380904567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              >+38 090 456 78 90</a
+            >
+          </li>
+          <li class="contact-item">
+            <svg class="contacts-icons" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#letter"></use></svg
+            ><a
+              href="mailto:lloydjefferson@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >lloydjefferson@gmail.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <svg class="contacts-icons" width="24" height="24">
+              <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#location"></use></svg
+            ><a
+              href="https://www.google.com/maps/place/New+York,+NY,+USA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >USA, New York</a
+            >
+          </li>
+        </ul>
+      </address>
+      <form class="form" name="form">
+        <div class="form-input">
+          <input
+            class="email-field"
+            name="email"
+            id="email"
+            type="email"
+            placeholder=""
+autocomplete="on"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
+          />
+          <label for="email" class="form-inp-label">Your email*</label>
+          <svg class="valid-icon" width="16" height="16">
+            <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#success-filled"></use>
+          </svg>
+          <div class="invalid-message">Invalid email, try again</div>
+        </div>
+        <div class="form-textarea">
+          <textarea
+            class="textarea-field"
+            name="comment"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder=""
+          ></textarea>
+          <label for="message" class="form-tx-label">Message</label>
+        </div>
+        <button class="form-btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <div class="overlay hidden">
+  <div class="form-container">
+    <div class="modal-btn-div">
+      <svg class="btn-close" width="24" height="24">
+        <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#header-cross"></use>
+      </svg>
+    </div>
+    <div>
+      <h3 class="modal-header">Thank you for your interest in cooperation!</h3>
+      <p class="modal-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content container">
+      <div class="logo-social">
+      <div class="logo-footer">
+        <h3><a href="./index.html"> LLOYD<span>JEFFERSON.</span></a></h3>
+      </div>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/goitclub" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/goit" target="_blank">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/Elijah-Vakulenko/avocado-team" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+      <div class="texto-footer-diferent">
+      <p class="texto-footer-1">© Copyright 2024.</p>
+      <p class="texto-footer-2">Made by LloydJefferson</p>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+
+    <button
+  class="back-to-top-btn is-hidden"
+  type="button"
+  data-action="back-to-top"
+>
+  <svg class="icon" width="30" height="30" aria-label="Back to top of the page">
+    <use href="/js_104_Elijah-Vakulenko/assets/icons-2d1d6538.svg#icon-arrow-up"></use>
+  </svg>
+</button>
+
+    
+  </body>
+</html>
