@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/avocado-team/",
+    "build": "vite build --base=/js_104_Elijah-Vakulenko/",
     "preview": "vite preview"
   },
   "devDependencies": {
